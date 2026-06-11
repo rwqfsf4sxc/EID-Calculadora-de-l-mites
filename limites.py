@@ -87,7 +87,7 @@ def calcular_limite(funcion_texto, h_texto):
                 # Quitamos los términos con "O" (los de orden mayor)
                 # y evaluamos en x = h
                 serie_sin_o = serie.removeO()
-                resultado_serie = sp.limit(serie_sin_o, x, h)
+                resultado_serie = serie_sin_o.subs(x, h)
                 resultado_serie = sp.simplify(resultado_serie)
                 
                 if resultado_serie != sp.nan and resultado_serie.is_finite:
