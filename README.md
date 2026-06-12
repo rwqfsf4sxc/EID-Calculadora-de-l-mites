@@ -1,2 +1,2 @@
-# EID-Calculadora-de-l-mites
+# EID-Calculadora-de-limites
 EID, calculadora de límites para cálculo básico.
