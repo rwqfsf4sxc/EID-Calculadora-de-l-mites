@@ -48,7 +48,7 @@ def calcular_limite(funcion_texto, h_texto):
                 pass
 
         # Intento 3: para límites al infinito hacemos t = 1/x
-        # cuando x → ∞, t → 0, entonces evaluamos ahí
+        # cuando x tiende a oo (inf), t tiende a 0, entonces evaluamos ahí
         if h == sp.oo:
             t = sp.Symbol('t')
             f_cambiada = sp.simplify(funcion.subs(x, 1/t))
@@ -65,7 +65,7 @@ def calcular_limite(funcion_texto, h_texto):
             except Exception:
                 pass
 
-        # Lo mismo pero para -∞, usamos x = -1/t
+        # Lo mismo pero para -oo, usamos x = -1/t
         if h == -sp.oo:
             t = sp.Symbol('t')
             f_cambiada = sp.simplify(funcion.subs(x, -1/t))
@@ -276,4 +276,4 @@ canvas = FigureCanvasTkAgg(figura, master=panel_derecho)
 canvas.draw()
 canvas.get_tk_widget().pack(fill="both", expand=True, padx=5, pady=5)
 
-ventana.mainloop()
+ventana.mainloop() #mantiene la ventana abierta
