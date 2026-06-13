@@ -1,8 +1,8 @@
-# ============================================================
+
 # CALCULADORA DE LÍMITES MATEMÁTICOS
 # Proyecto E.I.D. Cálculo Básico
-# Catalina Ojeda, Tomás Mardones
-# ============================================================
+# Alumnos : Catalina Ojeda, Tomás Mardones
+
 
 import customtkinter as ctk
 import matplotlib.pyplot as plt
